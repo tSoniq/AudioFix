@@ -9,4 +9,5 @@ battery life.
 To use the software you will need to compile either with a kernel signing certificate,
 or disable signing checks via csrutil while booted to recovery mode.
 
-A pre-built package is included - see the readme for instructions.
+A pre-built package is included, with a simple terminal based installation script. See
+the readme for instructions.
