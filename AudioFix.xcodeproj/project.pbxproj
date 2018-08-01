@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DACBA8221122ABD00CCC8F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACBA8121122ABD00CCC8F3 /* AppDelegate.m */; };
-		4DACBA8421122ABE00CCC8F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DACBA8321122ABE00CCC8F3 /* Assets.xcassets */; };
-		4DACBA8721122ABE00CCC8F3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DACBA8521122ABE00CCC8F3 /* MainMenu.xib */; };
-		4DACBA8A21122ABE00CCC8F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DACBA8921122ABE00CCC8F3 /* main.m */; };
+		4DACBA9921122E6200CCC8F3 /* ts_audiofix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DACBA9821122E6200CCC8F3 /* ts_audiofix.h */; };
+		4DACBA9B21122E6200CCC8F3 /* ts_audiofix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4DACBA9A21122E6200CCC8F3 /* ts_audiofix.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DACBA7D21122ABD00CCC8F3 /* AudioFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DACBA8021122ABD00CCC8F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4DACBA8121122ABD00CCC8F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DACBA8321122ABE00CCC8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4DACBA8621122ABE00CCC8F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4DACBA8821122ABE00CCC8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DACBA8921122ABE00CCC8F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DACBA8B21122ABE00CCC8F3 /* AudioFix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioFix.entitlements; sourceTree = "<group>"; };
+		4D64B9AB2112438800BBBF12 /* audiofix.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = audiofix.sh; sourceTree = "<group>"; };
+		4D64B9AD21124B9D00BBBF12 /* 00readme-audiofix.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "00readme-audiofix.txt"; sourceTree = "<group>"; };
+		4DACBA9621122E6200CCC8F3 /* TSAudioFixDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSAudioFixDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DACBA9821122E6200CCC8F3 /* ts_audiofix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ts_audiofix.h; sourceTree = "<group>"; };
+		4DACBA9A21122E6200CCC8F3 /* ts_audiofix.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ts_audiofix.cc; sourceTree = "<group>"; };
+		4DACBA9C21122E6200CCC8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DACBAA32112365B00CCC8F3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4DACBAA52112366100CCC8F3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4DACBAA72112366700CCC8F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4DACBAA9211236DC00CCC8F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4DACBA7A21122ABD00CCC8F3 /* Frameworks */ = {
+		4DACBA9221122E6200CCC8F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,52 +38,74 @@
 		4DACBA7421122ABD00CCC8F3 = {
 			isa = PBXGroup;
 			children = (
-				4DACBA7F21122ABD00CCC8F3 /* AudioFix */,
+				4D64B9AD21124B9D00BBBF12 /* 00readme-audiofix.txt */,
+				4D64B9AB2112438800BBBF12 /* audiofix.sh */,
+				4DACBA9721122E6200CCC8F3 /* AudioFixDriver */,
 				4DACBA7E21122ABD00CCC8F3 /* Products */,
+				4DACBAA22112365B00CCC8F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4DACBA7E21122ABD00CCC8F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DACBA7D21122ABD00CCC8F3 /* AudioFix.app */,
+				4DACBA9621122E6200CCC8F3 /* TSAudioFixDriver.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4DACBA7F21122ABD00CCC8F3 /* AudioFix */ = {
+		4DACBA9721122E6200CCC8F3 /* AudioFixDriver */ = {
 			isa = PBXGroup;
 			children = (
-				4DACBA8021122ABD00CCC8F3 /* AppDelegate.h */,
-				4DACBA8121122ABD00CCC8F3 /* AppDelegate.m */,
-				4DACBA8321122ABE00CCC8F3 /* Assets.xcassets */,
-				4DACBA8521122ABE00CCC8F3 /* MainMenu.xib */,
-				4DACBA8821122ABE00CCC8F3 /* Info.plist */,
-				4DACBA8921122ABE00CCC8F3 /* main.m */,
-				4DACBA8B21122ABE00CCC8F3 /* AudioFix.entitlements */,
+				4DACBA9821122E6200CCC8F3 /* ts_audiofix.h */,
+				4DACBA9A21122E6200CCC8F3 /* ts_audiofix.cc */,
+				4DACBA9C21122E6200CCC8F3 /* Info.plist */,
 			);
-			path = AudioFix;
+			path = AudioFixDriver;
+			sourceTree = "<group>";
+		};
+		4DACBAA22112365B00CCC8F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DACBAA9211236DC00CCC8F3 /* Security.framework */,
+				4DACBAA72112366700CCC8F3 /* Cocoa.framework */,
+				4DACBAA52112366100CCC8F3 /* IOKit.framework */,
+				4DACBAA32112365B00CCC8F3 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4DACBA9321122E6200CCC8F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DACBA9921122E6200CCC8F3 /* ts_audiofix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		4DACBA7C21122ABD00CCC8F3 /* AudioFix */ = {
+		4DACBA9521122E6200CCC8F3 /* TSAudioFixDriver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DACBA8E21122ABE00CCC8F3 /* Build configuration list for PBXNativeTarget "AudioFix" */;
+			buildConfigurationList = 4DACBA9D21122E6200CCC8F3 /* Build configuration list for PBXNativeTarget "TSAudioFixDriver" */;
 			buildPhases = (
-				4DACBA7921122ABD00CCC8F3 /* Sources */,
-				4DACBA7A21122ABD00CCC8F3 /* Frameworks */,
-				4DACBA7B21122ABD00CCC8F3 /* Resources */,
+				4DACBA9121122E6200CCC8F3 /* Sources */,
+				4DACBA9221122E6200CCC8F3 /* Frameworks */,
+				4DACBA9321122E6200CCC8F3 /* Headers */,
+				4DACBA9421122E6200CCC8F3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AudioFix;
-			productName = AudioFix;
-			productReference = 4DACBA7D21122ABD00CCC8F3 /* AudioFix.app */;
-			productType = "com.apple.product-type.application";
+			name = TSAudioFixDriver;
+			productName = AudioFix.kext;
+			productReference = 4DACBA9621122E6200CCC8F3 /* TSAudioFixDriver.kext */;
+			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,7 +116,7 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = tSoniq;
 				TargetAttributes = {
-					4DACBA7C21122ABD00CCC8F3 = {
+					4DACBA9521122E6200CCC8F3 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -112,45 +134,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4DACBA7C21122ABD00CCC8F3 /* AudioFix */,
+				4DACBA9521122E6200CCC8F3 /* TSAudioFixDriver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4DACBA7B21122ABD00CCC8F3 /* Resources */ = {
+		4DACBA9421122E6200CCC8F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DACBA8421122ABE00CCC8F3 /* Assets.xcassets in Resources */,
-				4DACBA8721122ABE00CCC8F3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4DACBA7921122ABD00CCC8F3 /* Sources */ = {
+		4DACBA9121122E6200CCC8F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DACBA8A21122ABE00CCC8F3 /* main.m in Sources */,
-				4DACBA8221122ABD00CCC8F3 /* AppDelegate.m in Sources */,
+				4DACBA9B21122E6200CCC8F3 /* ts_audiofix.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4DACBA8521122ABE00CCC8F3 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DACBA8621122ABE00CCC8F3 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4DACBA8C21122ABE00CCC8F3 /* Debug */ = {
@@ -262,37 +270,39 @@
 			};
 			name = Release;
 		};
-		4DACBA8F21122ABE00CCC8F3 /* Debug */ = {
+		4DACBA9E21122E6200CCC8F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioFix/AudioFix.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = AudioFix/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsoniq.AudioFix;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = BJF6446APQ;
+				INFOPLIST_FILE = AudioFixDriver/Info.plist;
+				MODULE_NAME = com.tsoniq.AudioFix_kext;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsoniq.driver.TSAudioFixDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
 		};
-		4DACBA9021122ABE00CCC8F3 /* Release */ = {
+		4DACBA9F21122E6200CCC8F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioFix/AudioFix.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = AudioFix/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tsoniq.AudioFix;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AudioFixDriver/Info.plist;
+				MODULE_NAME = com.tsoniq.AudioFix_kext;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsoniq.driver.TSAudioFixDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
 		};
@@ -308,11 +318,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DACBA8E21122ABE00CCC8F3 /* Build configuration list for PBXNativeTarget "AudioFix" */ = {
+		4DACBA9D21122E6200CCC8F3 /* Build configuration list for PBXNativeTarget "TSAudioFixDriver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DACBA8F21122ABE00CCC8F3 /* Debug */,
-				4DACBA9021122ABE00CCC8F3 /* Release */,
+				4DACBA9E21122E6200CCC8F3 /* Debug */,
+				4DACBA9F21122E6200CCC8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
